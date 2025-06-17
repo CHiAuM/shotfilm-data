@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talking Block</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Kanit', sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #1f3c2f;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .search-box input {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .banner {
+      display: flex;
+      gap: 5px;
+      overflow-x: auto;
+    }
+
+    .banner img {
+      width: 100%;
+      max-height: 120px;
+      object-fit: cover;
+    }
+
+    .table-container {
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+
+    thead {
+      background: #f95c1f;
+      color: white;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    .pagination {
+      text-align: right;
+      padding: 10px;
+    }
+
+    .pagination span, .pagination a {
+      margin: 0 5px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .pagination .current {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Talking Block</h1>
+    <div class="menu">
+      <a href="#">หน้าแรก</a>
+      <a href="#">กระทู้ของฉัน</a>
+      <a href="#">กล่องข้อความ</a>
+      <a href="#">บอร์ดส่วนตัว</a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="ค้นหา..." />
+    </div>
+  </header>
+
+  <div class="banner">
+    <img src="https://media.istockphoto.com/id/544670198/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%98%E0%B8%B8%E0%B8%A3%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%8A%E0%B8%B2%E0%B8%A7%E0%B8%8D%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%99%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B8%E0%B8%A1%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%87%E0%B8%9B%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B.jpg?s=1024x1024&w=is&k=20&c=eiCDbSOAzh86XDO5LvNfNPwM9_HL_cQj4bKxqDI9mQE=" alt="banner1">
+    <img src="https://travel.mthai.com/app/uploads/2019/03/1-1.jpg" alt="banner2">
+    <img src="https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-group-of-pictures-sitting-on-a-wooden-table-image_2934936.jpg" alt="banner3">
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>กระทู้ล่าสุด</th>
+          <th>หมวดหมู่</th>
+          <th>วันที่</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ทำไม? หลอดไฟบริเวณประตู 4 ชอบกระพริบตอนตี 3 คะ!???</td>
+          <td>กระทู้นักศึกษา</td>
+          <td>26/05/2568 04:08 น.</td>
+        </tr>
+        <tr>
+          <td><a href="post.html" style="text-decoration: none; color: red;"> เชื่อมั้ย! ถ้าทำสิ่งนี้ที่หน้องสมุดมหาวิทยาลัยแล้วจะได้คำตอบที่เราสงสัยทุกอย่างเลย (ไม่ปั่นค่ะ)</td>
+          <td>กระทู้นักศึกษา</td>
+          <td>26/05/2568 03:16 น.</td>
+        </tr>
+        <tr>
+          <td>@ร้านกับข้าวใกล้ฉัน พิกัดหอพักหลังประตู 2 ด่วน ๆ ค่ะ!!!</td>
+          <td>กระทู้นักศึกษา</td>
+          <td>26/05/2568 02:24 น.</td>
+        </tr>
+        <tr>
+          <td>ปัญหานักศึกษานอนไม่พอไม่มีสมาธิในการเรียน ใครรู้ช่วยตอบผมที</td>
+          <td>กระทู้อารมณ์ร้อน</td>
+          <td>26/05/2568 01:32 น.</td>
+        </tr>
+        <tr>
+          <td>แอบกินลูกชิ้นในวิชาเรียนรวม แล้วอาจารย์จับได้ โดนดุกลางห้องประชุมใหญ่ นอยมากอ่ะ</td>
+          <td>กระทู้นักศึกษา</td>
+          <td>26/05/2568 00:40 น.</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      หน้า 1 จาก 96
+      <span class="current">1</span>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      ...
+      <a href="#">96</a>
+    </div>
+  </div>
+</body>
+</html>
